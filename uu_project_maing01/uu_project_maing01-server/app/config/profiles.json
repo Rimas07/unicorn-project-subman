@@ -1,0 +1,130 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities","AsidExecutives","AsidLicenseOwner","Public"],
+    "useCaseMap": {}
+  },
+  "*": {
+    "profileList": ["Authorities","Executives","AwidLicenseOwner","Public"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["created"],
+        "profileList": ["AwidLicenseOwner"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["created"],
+        "profileList": ["Public","AwidLicenseOwner"]
+      },
+      "subject/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Administrations"]
+      },
+      "uu-app-binarystore/createBinary": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/getBinary": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/getBinaryData": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/updateBinaryData": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/updateBinary": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/deleteBinary": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/listBinaries": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/getBinaryVersion": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/updateBinaryVersion": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/getBinaryVersionData": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/deleteBinaryVersion": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "uu-app-binarystore/listBinaryVersions": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Administrations"]
+      },
+      "subject/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Administrations"]
+      },
+      "subject/addTopic": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/deleteTopic": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/updateTopic": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/addStudyMaterial": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "studyMaterial/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/deleteStudyMaterial": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "studyMaterial/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "subject/studyMaterialList": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "studyMaterial/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities"]
+      },
+      "projectMain/load": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives"]
+      }
+    }
+  }
+}
